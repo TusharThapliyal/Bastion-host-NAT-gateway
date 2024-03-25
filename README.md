@@ -32,7 +32,7 @@ terraform apply plan-1
 ## File provisioner
 
 Our Bastion host needs SSH key to SSH into our instance in private subnet. We can use file provisioner to send SSH key from our local machine to Bastion host.
-```bash
+```terraform
 connection {
     type        = "ssh"
     user        = "ubuntu"
