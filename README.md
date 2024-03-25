@@ -2,6 +2,9 @@
 
 Connecting our resources in AWS private subnet using Bastion-host and NAT-gateway. This repo contains Terraform code to deploy a NAT-gateway to allow private instance access to internet and a Bastion host in public subnet which can be used to ssh into our instance in private subnet. 
 
+## Architectural diagram
+![Cloud Architecture](https://github.com/TusharThapliyal/Bastion-host-NAT-gateway/assets/75366942/de0b015d-77c2-4afb-9546-eb531551a541)
+
 ## Use case
 
 A ``Bastion host``, also known as a jump host, is a server that sits in a public subnet and acts as a gateway to access servers in private subnets securely. You SSH into the bastion host first, and then from there, you can SSH into other servers in private subnets. This limits direct access to servers in private subnets from the internet, improving security.\
